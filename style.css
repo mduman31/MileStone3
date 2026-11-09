@@ -1,1 +1,121 @@
+/* Custom Global Reset & Matte WCAG AA Compliant Theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8FAFC; /* Matte Light Slate Pearl */
+    color: #0F172A; /* Rich Dark Slate for maximum contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1E293B; /* Deep Slate Blue */
+    color: #FFFFFF;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: #38BDF8; /* Accessible High-Contrast Cyan */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Gestalt Principle: Proximity via Profile Cards */
+.card-group {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+    color: #1E293B;
+}
+
+header h1 {
+    color: #FFFFFF;
+}
+
+/* Accessible Form Styling */
+fieldset {
+    border: 2px solid #CBD5E1;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #1E293B;
+    padding: 0 0.5rem;
+}
+
+.form-field {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #94A3B8;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: 3px solid #0284C7; /* Accessible focus rings */
+}
+
+button {
+    background-color: #1E293B;
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: #0284C7;
+}
+
+.error-message {
+    color: #DC2626; /* Accessible Red */
+    font-weight: bold;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0F172A;
+    color: #94A3B8;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
 
