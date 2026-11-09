@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MaryAnn & Secure Communication Gateway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Secure Communication Gateway</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="weather.html">10-Day Weather Operations</a> | 
+            <a href="contact.html">About & Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card-group">
+            <h2>Dedication Segment</h2>
+            <p>Our journey is built on structural perseverance. This portfolio honors our beloved family horse, <strong>Lane</strong>, who collapsed when his leg gave in during a critical travel event while our family was traveling to attend a funeral. His legacy reminds us to build resilient infrastructure that supports those depending on us.</p>
+        </div>
+
+        <h2>Accessible Network Inquiry Portal</h2>
+        <!-- Form includes fieldsets, legends, explicit labels, and an accessibility error container -->
+        <form id="contactPortal" onsubmit="evaluateForm(event)">
+            <fieldset>
+                <legend>User Credentials Identity Authentication</legend>
+                
+                <div class="form-field">
+                    <label prejudices for="username">Full Name:</label>
+                    <input type="text" id="username" required>
+                </div>
+                
+                <div class="form-field">
+                    <label for="email">Secure Contact Email Address:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="subject">Inquiry Subject Line:</label>
+                    <input type="text" id="subject" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Transmission Message Content:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+            </fieldset>
+            
+            <!-- Accessible Alert Container: reads changes automatically via screen reader without blocking modals -->
+            <div id="errorBox" class="error-message" aria-live="assertive" role="alert"></div>
+            
+            <button type="submit">Submit Request Packet</button>
+        </form>
+    </main>
+
+    <script>
+        function evaluateForm(event) {
+            event.preventDefault();
+            const errorBox = document.getElementById('errorBox');
+            const nameInput = document.getElementById('username').value.trim();
+            
+            if (nameInput === "") {
+                errorBox.textContent = "Error Field Exception: Name credentials block cannot remain blank.";
+                errorBox.style.display = "block";
+            } else {
+                errorBox.style.display = "none";
+                alert("Data transmission successful!");
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy; 2026 MaryAnn Duman Portfolio. Form Architecture: WCAG AA Compliant.</p>
+    </footer>
+</body>
+</html>
